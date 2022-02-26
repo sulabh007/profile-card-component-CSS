@@ -13,16 +13,33 @@
     @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @media(min-width:376px){
+      body{
+        background-position-x: -62%, 151%;
+        background-position-y: 54%, -39%;
+      }
+      .box{
+        width: 350px;
+      }
+    }
+    @media(max-width:376px){
+      body{
+        background-position-x: 157%, -59%;
+        background-size: 660px, 660px;
+        background-position-y: 61%, -53%;
+      }
+      .box{
+        width: 324px;
+      }
+    }
     body{
       background-color: hsl(185, 75%, 39%);
       background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
       background-repeat: no-repeat, no-repeat;
-      background-position-x: -62%, 151%;
-      background-position-y: 54%, -39%;
+      background-blend-mode: soft-light;
       font-family: 'Kumbh Sans', sans-serif;
     }
     .box{
-      width: 350px;
       height: 374px;
       border-radius: 16px;
       position: absolute;
@@ -71,6 +88,7 @@
       margin-top: 14px;
       display: flex;
       column-gap: 29px;
+      letter-spacing: 0.5px;
     }
     .stat{
       display: flex;
@@ -96,7 +114,7 @@
         <h1 style="padding-top: 68px;">Victor Crest <span style="font-weight: 400; color: hsl(227, 10%, 46%); margin-left:4px;">26</span></h1>
         <p>London</p>
       </div>
-      <hr style="opacity: 0.3;margin: 0;">
+      <hr style="opacity: 0.15;background-color: gray;margin: 0;">
       <div class="stats">
         <div class="stat" style="margin-left: 47px;">
           <h1>80K</h1>
@@ -112,12 +130,10 @@
         </div>
       </div>
     </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sulabh Jha</a>.
+    </div>
   </main>
-  
- 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
